@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formularios.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulario</h1>
+        <form action="/action_page.php" class="formulario">
+            <div class="input-container">
+                <label for="name">Ingresa tu nombre:</label>
+                <input type="text" class="name" name="name" id="nome-input" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="input-container">
+                <label for="opciones">Selecciona que prefiere:</label>
+                <select name="opciones" class="opciones" id="opciones-input">
+                <option value="1">Pizza</option>
+                <option value="2">Hamburguesa</option>
+                <option value="3">Hacer dieta :(</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="fecha">Ingresa la fecha:</label>
+                <input type="date" value="" class="fecha" name="fecha" placeholder="Ingrese fecha">
+            </div>
+            <div class="input-container">
+                <label for="comentarios">Comentarios:</label>
+                <input type="text" name="comentarios" placeholder="Ingresa comentario" id="comentarios-input">
+            </div>
+            <div class="errores">
+                <ul>
+                </ul>
+            </div>
+            <button type="submit" class="boton-mensaje">Enviar mensaje</button>
+        </form>
+    </section>      
+    <script src="/formularios.js"></script>
+</body>
+</html>
